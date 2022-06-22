@@ -39,16 +39,16 @@ left.addEventListener("click", () => {
   });
 });
 
-// function activateSlider() {
-//   slider.forEach((p) => {
-//     p.style.transform = `translateX(-${position}00%)`;
-//   });
-//   position++;
+function activateSlider() {
+  slider.forEach((p) => {
+    p.style.transform = `translateX(-${position}00%)`;
+  });
+  position++;
 
-//   if (position > slider.length - 3) {
-//     position = 0;
-//   }
-// }
-// setInterval(() => {
-//   activateSlider();
-// }, 3000);
+  if (position > slider.length - 3) {
+    position = 0;
+  }
+}
+setInterval(() => {
+  activateSlider();
+}, 9000);
